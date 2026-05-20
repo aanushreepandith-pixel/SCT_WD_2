@@ -15,7 +15,7 @@ calculator/
 ├── script.js    → Calculator logic & keyboard support
 
 └── README.md    → Project documentation
-
+__________________________________________________________________________________________________________________________________________
 
 ✨ **Features**
 
@@ -36,7 +36,7 @@ calculator/
 ✅ Full keyboard support
 
 ✅ Responsive font size for long numbers
-
+__________________________________________________________________________________________________________________________________________
 
 🧩 **Technologies Used**
 
@@ -45,7 +45,7 @@ HTML5 — Semantic structure, button grid
 CSS3 — Custom properties, Grid layout, transitions, keyframe animations
 
 JavaScript  —  DOM API, keyboard events
-
+__________________________________________________________________________________________________________________________________________
 
 **Event Listeners**
 
