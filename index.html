@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Lexend:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="calc-wrapper">
+    <div class="calc-body">
+
+      <!-- Display Section -->
+      <div class="display-section" id="display">
+        <div class="history-line" id="histLine"></div>
+        <div class="main-display" id="mainDisplay">0</div>
+      </div>
+
+      <!-- Button Grid -->
+      <div class="buttons-grid">
+
+        <!-- Row 1 -->
+        <button class="btn btn-clear"      onclick="calc.clear()">AC</button>
+        <button class="btn btn-clear"      onclick="calc.toggleSign()">+/−</button>
+        <button class="btn btn-clear"      onclick="calc.percent()">%</button>
+        <button class="btn btn-op" id="op-/" onclick="calc.setOp('/')">÷</button>
+
+        <!-- Row 2 -->
+        <button class="btn btn-num" onclick="calc.digit('7')">7</button>
+        <button class="btn btn-num" onclick="calc.digit('8')">8</button>
+        <button class="btn btn-num" onclick="calc.digit('9')">9</button>
+        <button class="btn btn-op" id="op-*" onclick="calc.setOp('*')">×</button>
+
+        <!-- Row 3 -->
+        <button class="btn btn-num" onclick="calc.digit('4')">4</button>
+        <button class="btn btn-num" onclick="calc.digit('5')">5</button>
+        <button class="btn btn-num" onclick="calc.digit('6')">6</button>
+        <button class="btn btn-op" id="op--" onclick="calc.setOp('-')">−</button>
+
+        <!-- Row 4 -->
+        <button class="btn btn-num" onclick="calc.digit('1')">1</button>
+        <button class="btn btn-num" onclick="calc.digit('2')">2</button>
+        <button class="btn btn-num" onclick="calc.digit('3')">3</button>
+        <button class="btn btn-op" id="op-+" onclick="calc.setOp('+')">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn btn-num btn-zero" onclick="calc.digit('0')">0</button>
+        <button class="btn btn-num"          onclick="calc.dot()">.</button>
+        <button class="btn btn-eq"           onclick="calc.equals()">=</button>
+
+      </div>
+
+      <p class="keyboard-hint">⌨ keyboard supported</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
